@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><ins>Semantica e TAG's de formatação</ins></h1>
+    <h2>O que é a Semantica no HTML5?</h2>
+    <p>
+        <q><ins>Semântica</ins></q> é o que da <strong>significado</strong> para o <strong><ins>HTML5</ins></strong>.
+    </p>
+    <p>
+        Para o <ins><strong>HTML5</strong></ins>, usar as <strong>TAG's</strong> é importante para dar <q>significado</q> as formas que estão sendo usadas no conteúdo. Ao invés de ser apenas formatações visuais, o uso das <q>TAG's</q> mostra para os <strong>mecanismos de busca</strong> que ali significa algo.
+    </p>
+    <h2><ins>TAG's Semânticas</ins></h2>
+    <p>
+        <blockquote>
+            < adress >< /adress > é a <strong>TAG</strong> usada para por uma localização que pode ser aberta no Google Maps. <br>
+            Exemplo:<address>R. Eng. João Ortiz Monteiro - Morumbi, São Paulo - SP</address>
+        </blockquote>
+    </p>
+    <h3>Negrito:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < strong > < /strong > <br> Exemplo: <strong>Olá, Mundo</strong>
+        </blockquote>
+    </p>
+    <h3>Italico:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < em > < /em > <br>
+            Exemplo: estou escrevendo <em>em italico</em>.
+        </blockquote>
+    </p>
+    <h3>Marca Texto:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < mark > < /mark > <br>
+            Exemplo: Queria deixar <mark>esse texto</mark> destacado. <br>
+            <strong>OBS:</strong> Para mudar a cor teria que ser com CSS.
+        </blockquote>
+    </p>
+    <h3>Traço na Palavra (texto visivel mas excluido):</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < del > < /del > <br>
+            Exemplo: Essa palavra <del>foi desconciderada</del> nessa frase, voce pode le-la, mas não leve em consideração.
+        </blockquote>
+    </p>
+    <h3>Traço em Baixo da Palavra:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < ins > < /ins > <br>
+            Exemplo: Gostaria de destacar a <ins>importancia</ins> de usar essa <ins>TAG</ins> destacando as palavras.
+        </blockquote>
+    </p>    
+    <h3>Envelopamento de Abreviaturas (TAG's):</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> abb na barra de pesquisa. Para abrir a aba de pesquisa, usamos o comando <strong>CTRL + SHIFT + P</strong>.
+        </blockquote>
+    </p>
+    <h3>Texto Sobrescrito(Cima) e Subscrito(Baixo):</h3>
+    <p>
+        <blockquote>
+            <strong>TAG Sobrescrito =</strong> < sup > < /sup > <br>
+            Exemplo: X<sup>4</sup> <br>
+            <strong>TAG Subscrito =</strong> < sub > < /sub > <br>
+            Exemplo: H<sub>2</sub>O
+        </blockquote>
+    </p>
+    <h3>Trechos de Código:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < code > < /code > <br>Exemplo: 
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'O número é PAR')
+                else:
+                    print(f'O número é IMPAR')
+            </code> <br>
+            <strong>OBS:</strong> Dessa forma as letras não irão pular linhas e ficarão mono-espaçadas, para que fique igual ao que foi escrito, usamos a <strong>TAG < pre > < /pre ></strong>  <br>
+            Exemplo com a <strong>TAG pre</strong>: <br>
+            <pre><code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print(f'O número é PAR')
+                else:
+                    print(f'O número é IMPAR')
+            </code></pre>
+            <br><strong>OBS<sup>2</sup>:</strong> A <strong>TAG pre</strong> pode ser usada para deixar linhas igual foram escritas na hora de programar.
+        </blockquote>
+    </p>
+    <h3>Citações:</h3>
+    <p>
+        Temos dois tipos de Citações, temos as aspas" e temos outro tipo de citação que forma um bloco com espaçamento para o lado.
+        <h4>Aspas:</h4>
+        <blockquote>
+            <strong>TAG = </strong> < q > < /q > <br>Exemplo: Estou cursando o <q>Curso em Video</q>.
+        </blockquote>
+        <h4>Espaçamento:</h4>
+        <blockquote>
+            <strong>TAG =</strong> < blockquote> < /blockquote > <br>
+            Exemplo: <br>
+            <blockquote>
+                todo esse conteudo esta com um espaçamento, igual a quase todos os parágrafos deste codigo. 
+            </blockquote>
+        </blockquote>
+    </p>
+    <h3>Texto Invertido:</h3>
+    <p>
+        <blockquote>
+            <strong>TAG =</strong> < bdo dir="" >< /bdo >
+            <br>Exemplo: <bdo dir="rtl">esse texto esta invertido.</bdo> <br>
+            <strong>OBS:</strong> <q>A TAG</q> possui um <strong>PARAMETRO</strong>  <ins>dir = " "</ins> que precisa ser preenchido com: <br>
+            <strong>rtl =</strong> da direita para esquerda(invertido). <br>
+            <strong>ltr =</strong> da esquerda para direita(normal).
+        </blockquote>
+    </p>
+    <h3>Letras Grandes e Pequenas:</h3>
+    <p>
+        <blockquote>
+            No <ins>HTML5</ins> a <strong>TAG</strong> para deixar o as letras grandes ficou <mark>obsoleta</mark>, mas para usar é a TAG < big >.
+            <br>A TAG para deixar pequena não esta obsoleta, talvez por que ainda seja usada para fazer observações em alguma parte do site.
+        </blockquote>
+        <h4>Pequena:</h4>
+        <blockquote>
+            <strong>TAG =</strong> < small >< /small > <br>
+            Exemplo: 
+            <small>
+                Escrever essas linhas de codigos foi trabalhoso, mas foi um bom exercício que me desafiei.
+            </small>
+        </blockquote>
+    </p>
+</body>
+</html>
