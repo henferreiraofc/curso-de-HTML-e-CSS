@@ -2,17 +2,40 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-.menu {
-    display: inline;
+body {
+    margin: -21px 0px 0px 0px;
+}
+
+#box-principal {
+    background-image: linear-gradient(to bottom, #3BD27F, #34c073, #20613C);
+}
+
+.h1-principal, .p-principal {
+    text-align: center;
+    color: rgb(255, 248, 248);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+
+.h1-principal {
+    padding: 30px 0px 0px 0px;
+    font-size: 1.5em;
+}
+
+.p-principal {
+    color: rgb(241, 235, 235);
 }
 
 .link-m {
     text-decoration: none;
+    display: inline;
+    text-align: left;
+    color: rgb(255, 248, 248);
+    padding: 5px;
 }
 
-#box-principal {
-    background-color: #3BD27F;
+nav {
+    padding: 0px 5px 5px 15px;
+    margin-top: 30px;
 }
